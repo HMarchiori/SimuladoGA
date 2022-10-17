@@ -44,11 +44,11 @@ public class Main {
             Scanner verificaIdade = new Scanner(System.in);
             String idade1 = verificaIdade.next();
             boolean novo;
-            if (idade1 == "S")
+            if (idade1.equals("S"))
                 novo = true;
             else novo = false;
-
             Imovel imovel1 = new Imovel(endereco1, venda1, aluguel1, novo);
+            imovel1.calculaImposto();
 
         System.out.println("Informe o endereço do imóvel 2");
         Scanner valorEndereco2 = new Scanner(System.in);
@@ -64,12 +64,39 @@ public class Main {
 
         System.out.println("O imóvel 2 é novo? (S/N)");
         Scanner verificaIdade2 = new Scanner(System.in);
-        String idade2 = verificaIdade.next();
+        String idade2 = verificaIdade2.next();
         boolean novo2;
-        if (idade2 == "S")
+        if (idade2.equals("S"))
             novo2 = true;
         else novo2 = false;
-
         Imovel imovel2 = new Imovel(endereco2, venda2, aluguel2, novo2);
+        imovel2.calculaImposto();
+
+        System.out.println("Informe o endereço do imóvel 3");
+        Scanner valorEndereco3 = new Scanner(System.in);
+        String endereco3 = valorEndereco3.next();
+
+        System.out.println("Informe o valor de venda do imóvel 3");
+        Scanner valorVenda3 = new Scanner(System.in);
+        double venda3 = valorVenda3.nextDouble();
+
+        System.out.println("Informe o valor de aluguel do imóvel 3");
+        Scanner valorAluguel3 = new Scanner(System.in);
+        double aluguel3 = valorAluguel3.nextDouble();
+
+        System.out.println("O imóvel 3 é novo? (S/N)");
+        Scanner verificaIdade3 = new Scanner(System.in);
+        String idade3 = verificaIdade3.next();
+        boolean novo3;
+        if (idade3.equals("S"))
+            novo3 = true;
+        else novo3 = false;
+        Imovel imovel3 = new Imovel(endereco3, venda3, aluguel3, novo3);
+        imovel3.calculaImposto();
+
+
+        imovel1.infoImovel();
+        imovel2.infoImovel();
+        imovel3.infoImovel();
             }
         }

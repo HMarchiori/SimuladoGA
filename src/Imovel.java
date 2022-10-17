@@ -15,7 +15,7 @@ public class Imovel {
         this.novo = novo;
     }
     public void infoImovel() {
-        System.out.println("Endereço: " + getEndereco());
+        System.out.println("\nEndereço: " + getEndereco());
         System.out.println("Valor de Venda: " + getValorVenda());
         System.out.println("Valor de Aluguel: " + getValorAluguel());
         System.out.println("Imposto: " + getImposto());
