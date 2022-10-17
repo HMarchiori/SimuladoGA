@@ -29,10 +29,10 @@ public class Imovel {
         else novo = false;
     }
     public void calculaImposto() {
-        if (novo = true) {
-            imposto = 0.15 * valorVenda;
+        if (novo) {
+            imposto = 0.15 * getValorVenda();
         }
         else
-            imposto = 0.10 * valorAluguel;
+            imposto = 0.10 * getValorAluguel();
     }
 }

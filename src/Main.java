@@ -43,9 +43,33 @@ public class Main {
             System.out.println("O imóvel é novo? (S/N)");
             Scanner verificaIdade = new Scanner(System.in);
             String idade1 = verificaIdade.next();
-        boolean novo;
-        if (idade1 == "S")
+            boolean novo;
+            if (idade1 == "S")
                 novo = true;
-        else novo = false;
+            else novo = false;
+
+            Imovel imovel1 = new Imovel(endereco1, venda1, aluguel1, novo);
+
+        System.out.println("Informe o endereço do imóvel 2");
+        Scanner valorEndereco2 = new Scanner(System.in);
+        String endereco2 = valorEndereco2.next();
+
+        System.out.println("Informe o valor de venda do imóvel 2");
+        Scanner valorVenda2 = new Scanner(System.in);
+        double venda2 = valorVenda2.nextDouble();
+
+        System.out.println("Informe o valor de aluguel do imóvel 2");
+        Scanner valorAluguel2 = new Scanner(System.in);
+        double aluguel2 = valorAluguel2.nextDouble();
+
+        System.out.println("O imóvel 2 é novo? (S/N)");
+        Scanner verificaIdade2 = new Scanner(System.in);
+        String idade2 = verificaIdade.next();
+        boolean novo2;
+        if (idade2 == "S")
+            novo2 = true;
+        else novo2 = false;
+
+        Imovel imovel2 = new Imovel(endereco2, venda2, aluguel2, novo2);
             }
         }
