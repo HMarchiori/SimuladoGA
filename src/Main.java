@@ -28,8 +28,24 @@ public class Main {
             }
             else break;
         }
-        for (int i=0; i<3; i++) {
-            System.out.println("teste");
+            System.out.println("Informe o endereço do imóvel");
+            Scanner valorEndereco1 = new Scanner(System.in);
+            String endereco1 = valorEndereco1.next();
+
+            System.out.println("Informe o valor de venda do imóvel");
+            Scanner valorVenda1 = new Scanner(System.in);
+            double venda1 = valorVenda1.nextDouble();
+
+            System.out.println("Informe o valor de aluguel do imóvel");
+            Scanner valorAluguel1 = new Scanner(System.in);
+            double aluguel1 = valorAluguel1.nextDouble();
+
+            System.out.println("O imóvel é novo? (S/N)");
+            Scanner verificaIdade = new Scanner(System.in);
+            String idade1 = verificaIdade.next();
+        boolean novo;
+        if (idade1 == "S")
+                novo = true;
+        else novo = false;
+            }
         }
-    }
-}

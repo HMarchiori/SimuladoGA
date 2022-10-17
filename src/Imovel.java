@@ -1,5 +1,7 @@
 import lombok.Data;
 
+import java.util.Scanner;
+
 @Data
 public class Imovel {
     private String endereco;
@@ -16,6 +18,15 @@ public class Imovel {
         System.out.println("Endereço: " + getEndereco());
         System.out.println("Valor de Venda: " + getValorVenda());
         System.out.println("Valor de Aluguel: " + getValorAluguel());
+        System.out.println("Imposto: " + getImposto());
+    }
+    public void verificaIdade() {
+        System.out.println("O imóvel é novo? (S/N)");
+        Scanner verificaIdade = new Scanner(System.in);
+        String idade = verificaIdade.next();
+        if (idade == "S")
+            novo = true;
+        else novo = false;
     }
     public void calculaImposto() {
         if (novo = true) {
